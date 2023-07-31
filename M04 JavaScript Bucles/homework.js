@@ -195,17 +195,16 @@ function esPrimo(num) {
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
    if (num < 2) {
-      return false; 
+      return false; // Los números menores que 2 no son primos.
     }
     
     for (var i = 2; i < num; i++) {
       if (num % i === 0) {
         return false; 
       }
-      else {return true;}
     }
     
-     
+    return true; 
   }
 
    
